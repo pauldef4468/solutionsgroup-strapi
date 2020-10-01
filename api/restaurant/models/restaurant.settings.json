@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "restaurants",
+  "info": {
+    "name": "establishment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "establishment_types": {
+      "collection": "establishment-type"
+    },
+    "address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "zip": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "product_types": {
+      "collection": "product-type"
+    },
+    "order_methods": {
+      "collection": "order-methods"
+    },
+    "product_menus": {
+      "via": "establishments",
+      "collection": "product-menu"
+    },
+    "organizations": {
+      "via": "establishments",
+      "collection": "organization"
+    }
+  }
+}

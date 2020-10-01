@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_restaurant_item_items",
+  "info": {
+    "name": "item",
+    "icon": "utensils"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

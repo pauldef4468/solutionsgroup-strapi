@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "establishment_types",
+  "info": {
+    "name": "EstablishmentType"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

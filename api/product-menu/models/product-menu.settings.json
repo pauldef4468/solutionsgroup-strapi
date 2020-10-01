@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_menus",
+  "info": {
+    "name": "productMenu"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "order_method": {
+      "model": "order-methods"
+    },
+    "establishments": {
+      "collection": "restaurant",
+      "via": "product_menus",
+      "dominant": true
+    },
+    "category": {
+      "type": "component",
+      "repeatable": true,
+      "component": "category.category-item"
+    }
+  }
+}

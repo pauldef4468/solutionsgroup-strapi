@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_methods",
+  "info": {
+    "name": "orderMethods"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "default": {
+      "type": "boolean"
+    }
+  }
+}

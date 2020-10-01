@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_category_category_items",
+  "info": {
+    "name": "categoryItem",
+    "icon": "boxes"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "restaurant-item.item"
+    }
+  }
+}
